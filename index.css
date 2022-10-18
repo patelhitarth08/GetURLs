@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    padding-top: 10em;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(201, 199, 199);
+}
+
+/* header starts */
+
+.header {
+    background-color: rgb(9, 46, 32);
+    color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 auto;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    font-size: 2.45rem;
+    color: lightgrey;
+    border: 0.05em solid lightgray;
+    margin-left: 3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding: 0.35em;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    color: maroon;
+    background-color: lightgray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7em;
+}
+
+.nav {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0.5em 1em;
+    padding: 0.6em 1em;
+    background-color: rgb(9, 46, 32);
+    color: white;
+}
+
+.nav:hover {
+    color: maroon;
+    background-color: lightgray;
+    border: 0 solid lightgray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* header ends */
+
+#geturl {
+    color: maroon;
+}
+
+.intro-container {
+    margin-top: 6em;
+    margin-bottom: 11em;
+
+}
+
+.intro {
+    font-size: 2.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.shorturl-portion {
+    text-align: center;
+}
+
+.short {
+    font-size: 2.3em;
+    text-align: center;
+    color: maroon;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 7em;
+    margin-top: 3em;
+}
+
+.my-intro {
+    color: rgb(9, 46, 32);
+    margin: 1em;
+    align-items: center;
+}
+.form-intro {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+.my-img {
+    width: 20em;
+    border-radius: 50%;
+    border: 0.35em solid rgb(9, 46, 32);
+    box-shadow: 0.2em 0.2em 2em rgb(9, 46, 32);
+
+}
+
+
+/* intro ends */
+
+/*heading starts*/
+.heading {
+    font-size: 3.1rem;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    color: rgb(9, 46, 32);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading p span {
+    color: maroon;
+}
+
+/*heading ends*/
+
+/* about starts */
+
+.about-container {
+    padding-top: 4.5em;
+    margin-bottom: 9em;
+}
+
+.about-me {
+    color: rgb(9, 46, 32);
+    margin: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.about-text {
+    width: 50%;
+    font-size: 1.9rem;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    line-height: 2.8rem;
+}
+
+.about-text a {
+    color: maroon;
+    font-weight: bold;
+}
+/* about ends */
+
+
+/*Contact me starts*/
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.card {
+    margin: 1em 1em;
+    background-color: rgb(9, 46, 32);
+    height: 8em;
+    color: lightgray;
+    /* padding: 0 1.5em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.card i {
+    border: 0.01em solid lightgray;
+    background-color: lightgray;
+    color: rgb(9, 46, 32);
+    padding: 0.3em;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 0.9em;
+    text-align: center
+}
+
+.card p {
+    color: lightgray;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+.card:hover i {
+    border: none;
+    background: none;
+    color: lightgray;
+    transform: scale(2);
+}
+
+.form-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+    text-align: left;
+    opacity: 0.5;
+}
+
+input[type=text] {
+    width: 25em;
+    color: lightgray;
+    padding: 1em 1em;
+    margin-bottom: 0.3em;
+    display: inline-block;
+    border: 0.01em solid #ccc;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    background-color: rgb(9, 46, 32);
+    font-size: 1em;
+
+}
+
+input[type=email],
+select {
+    width: 25em;
+    color: lightgray;
+    padding: 1em 1em;
+    margin: 1em 0;
+    display: inline-block;
+    border: 0.01em solid #ccc;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    background-color: rgb(9, 46, 32);
+    font-size: 1em;
+
+}
+
+input[type=textarea],
+select {
+    width: 25em;
+    font-size: 1em;
+    color: lightgray;
+    padding: 1em 1em;
+    margin: 0.3em 0;
+    display: inline-block;
+    border: 0.01em solid #ccc;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    background-color: rgb(9, 46, 32);
+}
+
+input[type=submit] {
+    background-color: rgb(9, 46, 32);
+    color: white;
+    border: 0.01em solid lightgray;
+    border-radius: 3rem;
+    width: 5em;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    padding: 0.2em;
+
+}
+
+.btn:hover {
+    color: rgb(9, 46, 32);
+    background-color: lightgray;
+}
+
+.input:hover {
+    background-color: lightgray;
+    color: rgb(9, 46, 32);
+    font-weight: bold;
+    border: 0.01em solid rgb(9, 46, 32);
+}
+
+input:hover::-webkit-input-placeholder {
+    color: rgb(9, 46, 32);
+    opacity: 1;
+}
+
+/*Contact me ends*/
+
+/*footer*/
+
+.foot {
+    padding: 0.1em 0;
+    text-align: center;
+    color: lightgray;
+    background-color: rgb(9, 46, 32);
+}
+
+.contact-heading {
+    margin-bottom: 0.2em;
+    font-size: 2rem;
+}
+
+
+.social-icon {
+    font-size: 3rem;
+    margin: 0 0.3em;
+    color: lightgray;
+}
+
+.social {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.1em;
+}
+
+
+/*footer*/
+
+#btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /* z-index: 1; */
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: rgb(129, 129, 129);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
